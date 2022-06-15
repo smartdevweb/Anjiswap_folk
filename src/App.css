@@ -1,0 +1,19 @@
+.App {
+    text-align: center;
+    background: #4E555E;
+    min-height: 100%;
+}
+
+.App .DisplayBox {
+    max-width: 500px;
+}
+
+.App .Radials {
+    position: fixed;
+    width: 588px;
+    height: 576px;
+    opacity: 0.3;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    left: 50%;
+    top: 50%;
+}

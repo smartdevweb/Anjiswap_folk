@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #4E555E;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.anji-green {
+    background: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), #1FE3CC;
+    background-blend-mode: soft-light, normal;
+    position: relative;
+}
+.anji-green:not([disabled]):hover {
+    background: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), #1bd8c2;
+    transform: scale(0.99);
+    transition: transform 450ms ease 0s;
+}
+.anji-red {
+  background: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), #FF4B33;
+  background-blend-mode: soft-light, normal;
+  position: relative;
+}
+.anji-colorful {
+  background: linear-gradient(91.44deg, #90FFED -0.25%, #ED21FA 144.97%), linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%);
+  background-blend-mode: soft-light, normal;
+  position: relative;
+}
+.anji-colorful:not([disabled]):hover {
+  background: linear-gradient(91.44deg, #81ffeb -0.25%, #ec12fa 144.97%), linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%);
+  background-blend-mode: soft-light, normal;
+  transform: scale(0.99);
+  transition: transform 450ms ease 0s;
+}
+.box-shadow {
+  box-sizing: border-box;
+  box-shadow: inset -2.5px -2.5px 5px #FAFBFF, inset 2.5px 2.5px 5px #A6ABBD;
+}
+.dark-box-shadow {
+  box-sizing: border-box;
+  box-shadow: -5px -5px 10px rgba(250, 251, 255, 0.1), 5px 5px 10px #35373E
+}
+.icon-btn {
+    opacity: 0.6;
+}
+.icon-btn:hover {
+    opacity: 1;
+}
+.text-font {
+  font-family: 'Roboto', sans-serif;
+}
+.number-font {
+  font-family: 'Roboto Mono', monospace;
+}
+.fade-in {
+    animation: fadein 0.5s;
+}
+
+.modal-content-fade {
+    animation: modaldrop 0.4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modaldrop {
+    from {
+        transform: translate(0px, 50px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
